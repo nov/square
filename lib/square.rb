@@ -1,0 +1,3 @@
+module Square
+  # Your code goes here...
+end
