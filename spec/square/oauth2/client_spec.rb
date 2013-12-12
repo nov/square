@@ -10,7 +10,7 @@ describe Square::OAuth2::Client do
 
     it { should be_a Rack::OAuth2::Client }
 
-    describe 'identifeir' do
+    describe 'identifier' do
       context 'when missing' do
         it do
           expect do

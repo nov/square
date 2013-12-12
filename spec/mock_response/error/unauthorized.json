@@ -1,0 +1,4 @@
+{
+  "message": "Unauthorized",
+  "type": "service.unauthorized"
+}

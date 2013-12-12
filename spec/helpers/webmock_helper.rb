@@ -24,7 +24,7 @@ module WebMockHelper
     if path_or_uri =~ /^https?:\/\//
       path_or_uri
     else
-      File.join Square::ROOT_URL, path_or_uri
+      File.join Square::Connect::ROOT_URL, path_or_uri
     end
   end
 
