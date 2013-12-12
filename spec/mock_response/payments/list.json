@@ -1,0 +1,185 @@
+[{
+  "id": "payment_1",
+  "merchant_id": "merchant_id",
+  "creator_id": "creator_id",
+  "created_at": "2013-05-23T09:43:59Z",
+  "device": {
+    "name": "iPhone"
+  },
+  "inclusive_tax_money": {
+    "amount": 0,
+    "currency_code": "JPY"
+  },
+  "additive_tax_money": {
+    "amount": 0,
+    "currency_code": "JPY"
+  },
+  "tax_money": {
+    "amount": 0,
+    "currency_code": "JPY"
+  },
+  "tip_money": {
+    "amount": 0,
+    "currency_code": "JPY"
+  },
+  "discount_money": {
+    "amount": 0,
+    "currency_code": "JPY"
+  },
+  "total_collected_money": {
+    "amount": 0,
+    "currency_code": "JPY"
+  },
+  "processing_fee_money": {
+    "amount": 0,
+    "currency_code": "JPY"
+  },
+  "net_total_money": {
+    "amount": 0,
+    "currency_code": "JPY"
+  },
+  "refunded_money": {
+    "amount": 0,
+    "currency_code": "JPY"
+  },
+  "inclusive_tax": [],
+  "additive_tax": [],
+  "tender": [{
+    "type": "CASH",
+    "name": "Cash",
+    "total_money": {
+      "amount": 0,
+      "currency_code": "JPY"
+    },
+    "tendered_money": {
+      "amount": 0,
+      "currency_code": "JPY"
+    }
+  }],
+  "refunds": [],
+  "itemizations": []
+}, {
+  "id": "payment_2",
+  "merchant_id": "merchant_id",
+  "creator_id": "creator_id",
+  "created_at": "2013-05-23T09:44:59Z",
+  "device": {
+    "name": "iPhone"
+  },
+  "inclusive_tax_money": {
+    "amount": 0,
+    "currency_code": "JPY"
+  },
+  "additive_tax_money": {
+    "amount": 0,
+    "currency_code": "JPY"
+  },
+  "tax_money": {
+    "amount": 0,
+    "currency_code": "JPY"
+  },
+  "tip_money": {
+    "amount": 0,
+    "currency_code": "JPY"
+  },
+  "discount_money": {
+    "amount": 0,
+    "currency_code": "JPY"
+  },
+  "total_collected_money": {
+    "amount": 20000,
+    "currency_code": "JPY"
+  },
+  "processing_fee_money": {
+    "amount": 0,
+    "currency_code": "JPY"
+  },
+  "net_total_money": {
+    "amount": 20000,
+    "currency_code": "JPY"
+  },
+  "refunded_money": {
+    "amount": 0,
+    "currency_code": "JPY"
+  },
+  "inclusive_tax": [],
+  "additive_tax": [],
+  "tender": [{
+    "type": "CASH",
+    "name": "Cash",
+    "total_money": {
+      "amount": 20000,
+      "currency_code": "JPY"
+    },
+    "tendered_money": {
+      "amount": 20000,
+      "currency_code": "JPY"
+    },
+    "change_back_money": {
+      "amount": 0,
+      "currency_code": "JPY"
+    }
+  }],
+  "refunds": [],
+  "itemizations": []
+}, {
+  "id": "payment_3",
+  "merchant_id": "merchant_id",
+  "creator_id": "creator_id",
+  "created_at": "2013-05-23T09:46:42Z",
+  "device": {
+    "name": "iPhone"
+  },
+  "inclusive_tax_money": {
+    "amount": 0,
+    "currency_code": "JPY"
+  },
+  "additive_tax_money": {
+    "amount": 0,
+    "currency_code": "JPY"
+  },
+  "tax_money": {
+    "amount": 0,
+    "currency_code": "JPY"
+  },
+  "tip_money": {
+    "amount": 0,
+    "currency_code": "JPY"
+  },
+  "discount_money": {
+    "amount": 0,
+    "currency_code": "JPY"
+  },
+  "total_collected_money": {
+    "amount": 0,
+    "currency_code": "JPY"
+  },
+  "processing_fee_money": {
+    "amount": 0,
+    "currency_code": "JPY"
+  },
+  "net_total_money": {
+    "amount": 0,
+    "currency_code": "JPY"
+  },
+  "refunded_money": {
+    "amount": 0,
+    "currency_code": "JPY"
+  },
+  "inclusive_tax": [],
+  "additive_tax": [],
+  "tender": [{
+    "type": "CASH",
+    "name": "Cash",
+    "total_money": {
+      "amount": 0,
+      "currency_code": "JPY"
+    },
+    "tendered_money": {
+      "amount": 0,
+      "currency_code": "JPY"
+    }
+  }],
+  "refunds": [],
+  "itemizations": []
+}]

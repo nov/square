@@ -8,7 +8,6 @@ module Square
             access_token.get endpoint_for(identifier, :payments)
           end
           payments.collect do |payment|
-            p payment
             Payment.new payment.merge(
               access_token: access_token
             )
