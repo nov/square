@@ -13,6 +13,15 @@ module Square
             )
           end
         end
+
+        def payment(payment_id, params = nil)
+          access_token_required!
+          Payment.new(
+            payment_id,
+            merchant_id: identifier,
+            access_token: access_token
+          ).fetch
+        end
       end
     end
   end

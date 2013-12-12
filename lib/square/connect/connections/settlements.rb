@@ -13,6 +13,15 @@ module Square
             )
           end
         end
+
+        def settlement(settlement_id, params = nil)
+          access_token_required!
+          Settlement.new(
+            settlement_id,
+            merchant_id: identifier,
+            access_token: access_token
+          ).fetch
+        end
       end
     end
   end

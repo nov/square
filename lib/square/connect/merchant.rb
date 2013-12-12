@@ -1,11 +1,10 @@
-require 'square/connect/connections'
-
 module Square
   module Connect
     class Merchant < Node
       include Connections::Payments
       include Connections::Refunds
       include Connections::Settlements
+      include Connections::BankAccounts
 
       attr_accessor :name, :email, :country_code, :language_code
 
