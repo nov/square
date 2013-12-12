@@ -1,0 +1,11 @@
+[
+  {
+    "id": "R:34GEWHCJGPR40",
+    "payment_id": "JGHJ0343",
+    "created_at": "2013-01-02T08:00:00.000Z",
+    "refunded_money": {
+      "amount": 5,
+      "currency_code": "USD"
+    }
+  }
+]

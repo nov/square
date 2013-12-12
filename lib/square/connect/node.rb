@@ -73,7 +73,3 @@ module Square
     end
   end
 end
-
-require 'square/connect/connections'
-require 'square/connect/merchant'
-require 'square/connect/payment'

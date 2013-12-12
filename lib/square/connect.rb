@@ -6,6 +6,12 @@ end
 
 require 'square/connect/error'
 require 'square/connect/node'
+require 'square/connect/connections'
+
+require 'square/connect/bank_account'
+require 'square/connect/merchant'
+require 'square/connect/payment'
+require 'square/connect/settlement'
 
 require 'square/connect/device'
 require 'square/connect/itemization'

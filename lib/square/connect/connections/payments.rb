@@ -2,10 +2,10 @@ module Square
   module Connect
     module Connections
       module Payments
-        def payments
+        def payments(params = nil)
           access_token_required!
           payments = handle_response do
-            access_token.get endpoint_for(identifier, :payments)
+            access_token.get endpoint_for(identifier, :payments), params
           end
           payments.collect do |payment|
             Payment.new payment.merge(

@@ -25,8 +25,14 @@ module Square
 
       def initialize(*args)
         super do |attributes|
-          self.merchant = attributes[:merchant] || Merchant.new(attributes[:merchant_id] || :me)
-          self.creator = attributes[:creator] || attributes[:creator_id] && Merchant.new(attributes[:creator_id])
+          self.merchant = if attributes[:merchant_id]
+            Merchant.new attributes[:merchant_id]
+          else
+            Merchant.new :me
+          end
+          self.creator = if attributes[:creator_id]
+            Merchant.new attributes[:creator_id]
+          end
           self.created_at = if attributes[:created_at]
             Time.parse attributes[:created_at]
           end

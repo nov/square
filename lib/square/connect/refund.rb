@@ -18,7 +18,9 @@ module Square
               self.send "#{time_key}=", Time.parse(attributes[time_key])
             end
           end
-          self.payment = attributes[:payment] || attributes[:payment_id] && Payment.new(attributes[:payment_id])
+          self.payment = if attributes[:payment_id]
+            Payment.new attributes[:payment_id]
+          end
         end
       end
     end

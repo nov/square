@@ -9,12 +9,6 @@ describe Square::Connect::Payment do
 
   describe '#initialize' do
     describe 'merchant' do
-      context 'when merchant given' do
-        subject { klass.new identifier, merchant: Square::Connect::Merchant.new(merchant_id) }
-        its(:merchant) { should be_a Square::Connect::Merchant }
-        its(:endpoint) { should == File.join(Square::Connect::ROOT_URL, "#{merchant_id}/payments/#{identifier}") }
-      end
-
       context 'when merchant_id given' do
         subject { klass.new identifier, merchant_id: merchant_id }
         its(:merchant) { should be_a Square::Connect::Merchant }
@@ -29,11 +23,6 @@ describe Square::Connect::Payment do
     end
 
     describe 'creator' do
-      context 'when creator given' do
-        subject { klass.new identifier, creator: Square::Connect::Merchant.new(creator_id) }
-        its(:creator) { should be_a Square::Connect::Merchant }
-      end
-
       context 'when creator_id given' do
         subject { klass.new identifier, creator_id: creator_id }
         its(:creator) { should be_a Square::Connect::Merchant }
