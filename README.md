@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ### OAuth 2.0
 
-    client = Square::Client.new(
+    client = Square::OAuth2::Client.new(
       '<your-client-id>',
       redirect_uri: 'https://example.client.com/callback'
     )
