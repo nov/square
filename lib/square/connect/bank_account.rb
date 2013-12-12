@@ -6,9 +6,9 @@ module Square
       def initialize(*args)
         super do |attributes|
           self.merchant = if attributes[:merchant_id]
-            Merchant.new attributes[:merchant_id]
+            Merchant.new attributes[:merchant_id], access_token
           else
-            Merchant.new :me
+            Merchant.me access_token
           end
           self.bank_name = attributes[:bank_name]
           self.name = attributes[:name]
@@ -16,6 +16,7 @@ module Square
           self.routing_number = attributes[:routing_number]
           self.account_number_suffix = attributes[:account_number_suffix]
           self.currency_code = attributes[:currency_code]
+          self.endpoint = endpoint_for merchant.identifier, :bank_accounts, identifier
         end
       end
     end

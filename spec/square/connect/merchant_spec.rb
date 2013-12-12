@@ -42,6 +42,16 @@ describe Square::Connect::Merchant do
     end
   end
 
+  describe '#fetch' do
+    it do
+      merchant = mock_request identifier, 'merchant/me' do
+        instance = klass.new identifier, access_token
+        instance.fetch
+      end
+      merchant.should be_a klass
+    end
+  end
+
   describe '.me' do
     subject { klass.me access_token }
     its(:identifier) { should == :me }

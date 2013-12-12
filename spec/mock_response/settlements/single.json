@@ -1,0 +1,11 @@
+{
+  "id": "C:34GEWHCJGPR40",
+  "status": "SENT",
+  "bank_account_id": "JGHJ0343",
+  "initiated_at": "2013-01-02T08:00:00.000Z",
+  "type": "CREDIT",
+  "total_money": {
+    "amount": 5981,
+    "currency_code": "USD"
+  }
+}

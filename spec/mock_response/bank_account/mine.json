@@ -1,0 +1,10 @@
+{
+  "id": "JGHJ0343",
+  "merchant_id": "AV76FTXT15L",
+  "bank_name": "Chase",
+  "name": "Dave's Business Account",
+  "type": "CHECKING",
+  "routing_number": "012345678",
+  "account_number_suffix": "1234",
+  "currency_code": "USD"
+}

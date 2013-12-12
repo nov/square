@@ -41,7 +41,7 @@ describe Square::Connect::Payment do
       fetched = mock_request instance.endpoint, 'payments/single' do
         instance.fetch
       end
-      fetched.should be_a Square::Connect::Payment
+      fetched.should be_a klass
     end
   end
 end

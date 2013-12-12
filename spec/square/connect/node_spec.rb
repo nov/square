@@ -63,8 +63,4 @@ describe Square::Connect::Node do
       end
     end
   end
-
-  describe '.me' do
-
-  end
 end

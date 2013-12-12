@@ -10,7 +10,7 @@ module Square
             Time.parse attributes[:initiated_at]
           end
           self.bank_account = if attributes[:bank_account_id]
-            BankAccount.new attributes[:bank_account_id]
+            BankAccount.new attributes[:bank_account_id], access_token
           end
           self.total_money = if attributes[:total_money]
             Money.new attributes[:total_money]
@@ -18,6 +18,9 @@ module Square
           self.entries = Array(attributes[:entries]).collect do |entry_attributes|
             SettlementEntry.new entry_attributes
           end
+
+          merchnat_id = attributes[:merchant_id] || :me
+          self.endpoint = endpoint_for merchnat_id, :settlements, identifier
         end
       end
     end

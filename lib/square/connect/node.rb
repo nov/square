@@ -7,8 +7,8 @@ module Square
         attributes = args.extract_options!
         self.identifier = attributes[:id] || attributes[:identifier] || args.first
         self.access_token = tokenize attributes[:access_token] || args.second
-        self.endpoint = endpoint_for identifier
         yield attributes if block_given?
+        self.endpoint ||= endpoint_for identifier
       end
 
       def fetch
