@@ -1,15 +1,14 @@
 module Square
   module Connect
-    class Tax
-      attr_accessor :name, :applied_money, :rate, :inclusion_type
+    class Discount
+      attr_accessor :name, :applied_money
 
       def initialize(attributes = {})
+        raise
         self.name = attributes[:name]
         self.applied_money = if attributes[:applied_money]
           Money.new attributes[:applied_money]
         end
-        self.rate = attributes[:rate]
-        self.inclusion_type = attributes[:inclusion_type]
       end
     end
   end

@@ -12,7 +12,7 @@ module Square
           :amount_money,
           :fee_money
         ].each do |money_key|
-          if attributes[money_key].present?
+          if attributes[money_key]
             self.send "#{money_key}=", Money.new(attributes[money_key])
           end
         end

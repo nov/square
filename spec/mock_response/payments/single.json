@@ -1,61 +1,106 @@
 {
-  "id": "payment_1",
-  "merchant_id": "merchant_id",
-  "creator_id": "creator_id",
-  "created_at": "2013-05-23T09:43:59Z",
+  "id": "Jq74mCczmFXk1tC10GB",
+  "merchant_id": "AV76FTXT15L",
+  "created_at": "2013-01-02T00:00:00.000Z",
+  "creator_id": "B5CX9A21Z",
+  "description": "Lunch for one",
   "device": {
-    "name": "iPhone"
+    "name": "Front of store"
   },
   "inclusive_tax_money": {
-    "amount": 0,
-    "currency_code": "JPY"
+    "amount": 20,
+    "currency_code": "USD"
   },
   "additive_tax_money": {
-    "amount": 0,
-    "currency_code": "JPY"
+    "amount": 30,
+    "currency_code": "USD"
   },
   "tax_money": {
-    "amount": 0,
-    "currency_code": "JPY"
+    "amount": 50,
+    "currency_code": "USD"
   },
   "tip_money": {
-    "amount": 0,
-    "currency_code": "JPY"
+    "amount": 100,
+    "currency_code": "USD"
   },
   "discount_money": {
     "amount": 0,
-    "currency_code": "JPY"
+    "currency_code": "USD"
   },
   "total_collected_money": {
-    "amount": 0,
-    "currency_code": "JPY"
+    "amount": 6150,
+    "currency_code": "USD"
   },
   "processing_fee_money": {
-    "amount": 0,
-    "currency_code": "JPY"
+    "amount": -169,
+    "currency_code": "USD"
   },
   "net_total_money": {
-    "amount": 0,
-    "currency_code": "JPY"
+    "amount": 5981,
+    "currency_code": "USD"
   },
   "refunded_money": {
     "amount": 0,
-    "currency_code": "JPY"
+    "currency_code": "USD"
   },
-  "inclusive_tax": [],
-  "additive_tax": [],
-  "tender": [{
-    "type": "CASH",
-    "name": "Cash",
-    "total_money": {
-      "amount": 0,
-      "currency_code": "JPY"
+  "inclusive_tax": [{
+    "inclusion_type": "INCLUSIVE",
+    "name": "City tax",
+    "applied_money": {
+      "amount": 15,
+      "currency_code": "USD"
     },
-    "tendered_money": {
-      "amount": 0,
-      "currency_code": "JPY"
+    "rate": "0.0025"
+  }],
+  "additive_tax": [{
+    "inclusion_type": "ADDITIVE",
+    "name": "CA Sales tax",
+    "applied_money": {
+      "amount": 15,
+      "currency_code": "USD"
+    },
+    "rate": "0.0025"
+  }],
+  "tender": [{
+    "type": "CREDIT_CARD",
+    "total_money": {
+      "amount": 6150,
+      "currency_code": "USD"
+    },
+    "card_brand": "VISA",
+    "pan_suffix": "1234",
+    "entry_method": "SWIPED",
+    "payment_note": "A note about the tender",
+    "total_money": {
+      "amount": 500,
+      "currency_code": "USD"
     }
   }],
   "refunds": [],
-  "itemizations": []
+  "itemizations": [{
+    "name": "Donut",
+    "quantity": 12,
+    "item_detail": {
+      "category_name": "Pastries",
+      "sku": 1234
+    },
+    "total_money": {
+      "amount": 6000,
+      "currency_code": "USD"
+    },
+    "single_quantity_money": {
+      "amount": 500,
+      "currency_code": "USD"
+    },
+    "gross_sales_money": {
+      "amount": 6000,
+      "currency_code": "USD"
+    },
+    "discount_money": {
+      "amount": 0,
+      "currency_code": "USD"
+    },
+    "taxes": [],
+    "discounts": []
+  }]
 }

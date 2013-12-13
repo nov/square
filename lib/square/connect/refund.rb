@@ -7,7 +7,7 @@ module Square
         self.identifier = attributes[:id]
         self.type = attributes[:type]
         self.reason = attributes[:reason]
-        self.refunded_money = if attributes[:refunded_money].present?
+        self.refunded_money = if attributes[:refunded_money]
           Money.new attributes[:refunded_money]
         end
         [

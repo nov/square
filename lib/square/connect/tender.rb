@@ -15,7 +15,7 @@ module Square
           :tendered_money,
           :change_back_money
         ].each do |money_attr|
-          if attributes[money_attr].present?
+          if attributes[money_attr]
             self.send "#{money_attr}=", Money.new(attributes[money_attr])
           end
         end
