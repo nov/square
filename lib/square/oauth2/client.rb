@@ -9,6 +9,10 @@ module Square
         super attributes
       end
 
+      def access_token!(*args)
+        super client_auth_method: :body
+      end
+
       def renew!
         # TODO
       end
